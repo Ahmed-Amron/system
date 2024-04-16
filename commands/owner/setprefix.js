@@ -1,0 +1,19 @@
+const { MessageEmbed } = require("discord.js");
+const db = require("pro.db"); 
+
+
+module.exports = {
+  name: "setprefix",
+  aliases: ["sp"],
+  description: "change prefix the bot",
+  usage: ["!setprefix"],
+  category: "owner",
+  botPermission: [],
+  authorPermission: [],
+  cooldowns: [],
+  ownerOnly: true,
+  run: async (client, message, args, config) => {
+var _0xf9f0=["\x70\x72\x6F\x2E\x64\x62","\x70\x72\x65\x66\x69\x78","\x67\x65\x74","","\x3A\x72\x6F\x6C\x6C\x69\x6E\x67\x5F\x65\x79\x65\x73\x3A\x20\x2A\x2A\x50\x6C\x65\x61\x73\x65\x20\x57\x72\x69\x74\x65\x20\x4E\x65\x77\x20\x50\x72\x65\x66\x69\x78\x21\x2A\x2A","\x73\x65\x6E\x64","\x63\x68\x61\x6E\x6E\x65\x6C","\x73\x65\x74","\x68\x65\x6C\x70","\x50\x4C\x41\x59\x49\x4E\x47","\x73\x65\x74\x41\x63\x74\x69\x76\x69\x74\x79","\x75\x73\x65\x72","\x2A\x2A\x50\x72\x65\x66\x69\x78\x20\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x79\x20\x43\x68\x61\x6E\x67\x65\x64\x20\x54\x6F\x20\x3A\x20\x5C\x60","\x5C\x60\x2A\x2A"];const db2=require(_0xf9f0[0]);const db3=db2[_0xf9f0[2]](_0xf9f0[1]);const dba=`${_0xf9f0[3]}${config[_0xf9f0[1]]}${_0xf9f0[3]}`&& db3;if(!args[0]){return message[_0xf9f0[6]][_0xf9f0[5]](`${_0xf9f0[4]}`)};db[_0xf9f0[7]](_0xf9f0[1],args[0]);client[_0xf9f0[11]][_0xf9f0[10]](`${_0xf9f0[3]}${args[0]}${_0xf9f0[8]}`,{type:_0xf9f0[9]});message[_0xf9f0[6]][_0xf9f0[5]](`${_0xf9f0[12]}${args[0]}${_0xf9f0[13]}`)
+  }
+}
+ 

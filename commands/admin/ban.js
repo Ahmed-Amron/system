@@ -1,0 +1,21 @@
+const { MessageEmbed } = require("discord.js");
+const logdata = require("../../models/channel.js")
+
+
+module.exports = {
+  name: "ban",
+  aliases: ["باند"],
+  description: "ban a member",
+  usage: ["!ban @user"],
+  category: "admin",
+  botPermission: ["BAN_MEMBERS"],
+  authorPermission: ["BAN_MEMBERS"],
+  cooldowns: [],
+  ownerOnly: false,
+  run: async (client, message, args, config) => {
+
+    
+          
+   var _0xce5d=["\x66\x69\x72\x73\x74","\x6D\x65\x6D\x62\x65\x72\x73","\x6D\x65\x6E\x74\x69\x6F\x6E\x73","\x67\x65\x74","\x63\x61\x63\x68\x65","\x67\x75\x69\x6C\x64","\x69\x20\x63\x6F\x75\x6C\x64\x6E\x27\x74\x20\x72\x65\x70\x6C\x79\x20\x74\x6F\x20\x74\x68\x65\x20\x6D\x65\x73\x73\x61\x67\x65\x3A\x20","\x6D\x65\x73\x73\x61\x67\x65","\x6C\x6F\x67","\x63\x61\x74\x63\x68","\x3A\x72\x6F\x6C\x6C\x69\x6E\x67\x5F\x65\x79\x65\x73\x3A\x20\x2A\x2A\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x6D\x65\x6D\x62\x65\x72\x20\x6F\x72\x20\x69\x64\x2A\x2A","\x72\x65\x70\x6C\x79","\x3A\x72\x6F\x6C\x6C\x69\x6E\x67\x5F\x65\x79\x65\x73\x3A\x20\x2A\x2A\x49\x20\x63\x61\x6E\x27\x74\x20\x66\x69\x6E\x64\x20\x74\x68\x69\x73\x20\x6D\x65\x6D\x62\x65\x72\x2A\x2A","\x69\x64","\x6D\x65\x6D\x62\x65\x72","\x3A\x72\x6F\x6C\x6C\x69\x6E\x67\x5F\x65\x79\x65\x73\x3A\x20\x2A\x2A\x59\x6F\x75\x20\x63\x61\x6E\x27\x74\x20\x62\x61\x6E\x20","\x75\x73\x65\x72\x6E\x61\x6D\x65","\x75\x73\x65\x72","\x2A\x2A","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x68\x69\x67\x68\x65\x73\x74","\x72\x6F\x6C\x65\x73","\x20\x68\x61\x76\x65\x20\x68\x69\x67\x68\x65\x72\x20\x72\x6F\x6C\x65\x20\x74\x68\x61\x6E\x20\x79\x6F\x75\x2A\x2A","\x62\x61\x6E\x6E\x61\x62\x6C\x65","\x62\x61\x6E","\x66\x69\x6E\x64\x4F\x6E\x65","\x63\x68\x61\x6E\x6E\x65\x6C","","\x75\x73\x65\x72\x20\x75\x73\x65\x20\x63\x6D\x64\x20\x3A\x20","\x61\x75\x74\x68\x6F\x72","\x20\x5C\x6E\x20\x75\x73\x65\x72\x20\x62\x61\x6E\x20\x3A\x20","\x20","\x73\x65\x74\x44\x65\x73\x63\x72\x69\x70\x74\x69\x6F\x6E","\x73\x65\x6E\x64","\x74\x68\x65\x6E","\x3A\x77\x68\x69\x74\x65\x5F\x63\x68\x65\x63\x6B\x5F\x6D\x61\x72\x6B\x3A\x20\x2A\x2A","\x20\x62\x61\x6E\x6E\x65\x64\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x21\x2A\x2A\x20\x3A\x61\x69\x72\x70\x6C\x61\x6E\x65\x3A"];const member=message[_0xce5d[2]][_0xce5d[1]][_0xce5d[0]]()|| message[_0xce5d[5]][_0xce5d[1]][_0xce5d[4]][_0xce5d[3]](args[0]);if(!args[0]){return message[_0xce5d[11]]({content:`${_0xce5d[10]}`,ephemeral:true})[_0xce5d[9]]((_0x28a1x2)=>{console[_0xce5d[8]](`${_0xce5d[6]}`+ _0x28a1x2[_0xce5d[7]])})};if(!member){return message[_0xce5d[11]]({content:`${_0xce5d[12]}`,ephemeral:true})[_0xce5d[9]]((_0x28a1x2)=>{console[_0xce5d[8]](`${_0xce5d[6]}`+ _0x28a1x2[_0xce5d[7]])})};if(member[_0xce5d[13]]=== message[_0xce5d[14]][_0xce5d[13]]){return message[_0xce5d[11]]({content:`${_0xce5d[15]}${member[_0xce5d[17]][_0xce5d[16]]}${_0xce5d[18]}`,ephemeral:true})[_0xce5d[9]]((_0x28a1x2)=>{console[_0xce5d[8]](`${_0xce5d[6]}`+ _0x28a1x2[_0xce5d[7]])})};if(message[_0xce5d[14]][_0xce5d[21]][_0xce5d[20]][_0xce5d[19]]< member[_0xce5d[21]][_0xce5d[20]][_0xce5d[19]]){return message[_0xce5d[11]]({content:`${_0xce5d[15]}${member[_0xce5d[17]][_0xce5d[16]]}${_0xce5d[22]}`,ephemeral:true})[_0xce5d[9]]((_0x28a1x2)=>{console[_0xce5d[8]](`${_0xce5d[6]}`+ _0x28a1x2[_0xce5d[7]])})};if(!member[_0xce5d[23]]){return message[_0xce5d[11]](`${_0xce5d[15]}${member[_0xce5d[17]][_0xce5d[16]]}${_0xce5d[18]}`)[_0xce5d[9]]((_0x28a1x2)=>{console[_0xce5d[8]](`${_0xce5d[6]}`+ _0x28a1x2[_0xce5d[7]])})};return (( await member[_0xce5d[24]]())+ message[_0xce5d[11]]({content:`${_0xce5d[35]}${member[_0xce5d[17]][_0xce5d[16]]}${_0xce5d[36]}`,ephemeral:true})[_0xce5d[9]]((_0x28a1x2)=>{console[_0xce5d[8]](`${_0xce5d[6]}`+ _0x28a1x2[_0xce5d[7]])})[_0xce5d[34]](async (_0x28a1x3)=>{var _0x28a1x4= await logdata[_0xce5d[25]]({GuildID:_0x28a1x3[_0xce5d[5]][_0xce5d[13]]});if(!_0x28a1x4){return};if(_0x28a1x3[_0xce5d[26]][_0xce5d[13]]== `${_0xce5d[27]}${_0x28a1x4[_0xce5d[26]]}${_0xce5d[27]}`){const _0x28a1x5= new MessageEmbed()[_0xce5d[32]](`${_0xce5d[28]}${_0x28a1x3[_0xce5d[29]][_0xce5d[13]]}${_0xce5d[30]}${member[_0xce5d[17]][_0xce5d[16]]}${_0xce5d[31]}`);_0x28a1x3[_0xce5d[26]][_0xce5d[33]]({embeds:[_0x28a1x5]})}}))
+  }
+}
