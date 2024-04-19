@@ -1,0 +1,1 @@
+var _0x6b26=["\x6D\x6F\x6E\x67\x6F\x6F\x73\x65","\x65\x78\x70\x6F\x72\x74\x73","\x6C\x6F\x67\x44\x61\x74\x61","\x6D\x6F\x64\x65\x6C"];const db=require(_0x6b26[0]);const logSchema= new db.Schema({GuildID:{type:String,required:true},channel:{type:String,required:true}});module[_0x6b26[1]]= db[_0x6b26[3]](_0x6b26[2],logSchema)
