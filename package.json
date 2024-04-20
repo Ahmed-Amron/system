@@ -28,7 +28,7 @@
     "smartestchatbot": "^2.0.0",
     "spotify-url-info": "^2.2.3",
     "ytdl-core": "^4.9.1"
-  },
+  }, "engines": { "node": "16.x" },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js"
